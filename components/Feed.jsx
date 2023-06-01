@@ -53,7 +53,8 @@ const Feed = () => {
                 method: 'GET',
                 headers: {
                     'Cache-Control': 'no-store'
-                }
+                },
+                cache: 'no-store'
             })
             const data = await response.json()
 
