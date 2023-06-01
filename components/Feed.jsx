@@ -52,7 +52,7 @@ const Feed = () => {
             const response = await fetch('/api/prompt', {
                 method: 'GET',
                 headers: {
-                    'Cache-Control': 'private, no-cache, no-store, must-revalidate'
+                    'Cache-Control': 'no-store'
                 },
                 cache: 'no-store'
             })
